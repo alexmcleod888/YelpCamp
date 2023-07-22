@@ -1,0 +1,82 @@
+<% layout('layouts/boilerplate.ejs')%>
+<div class="row">  
+    <div class="">       
+        <div class="card shadow my-3">
+            <div class="row">
+                <div class="col-lg-5 pe-lg-0 d-none d-lg-block">
+                    <img src="https://source.unsplash.com/3dyFih-5b9g" class="img-fluid rounded-stars ">
+                </div>
+                <div class="col-lg-7 ps-lg-0">
+                    <h3 class="card-header text-center p-3">Create New Campground</h3>
+                    <div class="card-body mt-lg-3">
+                        
+                        <form action="/campgrounds" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+                            <div class="mb-4">
+                                <label for="title" class="form-label">Title:</label>
+                                <input type="text" class="form-control" id= "title" name="campground[title]" required autofocus>
+                                <div class="valid-feedback">
+                                    valid!
+                                </div>
+                                <div class="invalid-feedback">
+                                    invalid: cannot be empty
+                                </div>
+                                    
+                            </div>
+                            <div class="mb-4">
+                                <label for="location" class="form-label">Location:</label>
+                                <input type="text" class="form-control" id="location" name="campground[location]" required>
+                                <div class="valid-feedback">
+                                    valid!
+                                </div>
+                                <div class="invalid-feedback">
+                                    invalid: cannot be empty
+                                </div>
+                            </div>
+                               
+                            <label for="price" class="form-label">Price:</label>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" id="price" class="form-control" aria-label="Amount (to the nearest dollar)" name="campground[price]" required>
+                                    <span class="input-group-text">.00</span>
+                                    <div class="valid-feedback">
+                                        valid!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        invalid: must be greater than -1
+                                    </div>
+                                </div>
+                                       
+                            <div class="mb-4">
+                                <label for="description" class="form-label">Description:</label>
+                                <textarea class="form-control" id="description" rows="3" name="campground[description]" required></textarea>
+                                <div class="valid-feedback">
+                                    valid!
+                                </div>
+                                <div class="invalid-feedback">
+                                    invalid: cannot be empty
+                                </div>
+                            </div>
+        
+                            <div class="mb-5">
+                                <label for="image" class="form-label mb-3">Choose Image(s):</label>
+                                <input class="form-control" type="file" name="image" id="image" multiple>
+                            </div>
+                            
+                            <div class="d-grid col-4 mx-auto">  
+                                <button type="submit" class="btn btn-success btn-lg">Confirm</button>
+                            </div>  
+        
+                            
+                            <footer>
+                                <a href="/campgrounds">Cancel</a>
+                            </footer>    
+                        </form>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
