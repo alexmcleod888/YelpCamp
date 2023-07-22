@@ -199,7 +199,9 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error.ejs', { err });
 });
 
+port = process.env.PORT || 3000;
+ 
 //checks whether the application is currently running
-app.listen(3000, () => {
-    console.log('listening on port 3000');
+app.listen(port, () => {
+    console.log(`listen on port ${port}`);
 });
