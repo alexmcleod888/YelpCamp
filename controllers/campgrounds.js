@@ -1,4 +1,4 @@
-//purpose: controller file contain functions for campgrounds based functionality
+//purpose: controller file containing functions for campgrounds based functionality
 
 const Campground = require('../models/campground.js');
 const { cloudinary } = require('../cloudinary');
