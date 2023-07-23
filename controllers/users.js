@@ -1,3 +1,5 @@
+//purpose: controller file containing functions for user based functionality
+
 const User = require('../models/User.js');
 
 module.exports.registerForm = (req, res) => { 

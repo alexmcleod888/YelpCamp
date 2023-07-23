@@ -1,4 +1,5 @@
 //purpose: stops the submission of a form if there is something wrong with the submission.
+
 (() => {
     'use strict'
 

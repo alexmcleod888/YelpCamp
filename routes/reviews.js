@@ -1,3 +1,5 @@
+//purpose: file containing reviews routes
+
 const express = require('express');
 const catchAsync = require('../utils/CatchAsync');
 const reviews = require('../controllers/reviews.js');

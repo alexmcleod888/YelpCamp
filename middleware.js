@@ -1,3 +1,5 @@
+//purpose: contains middleware functions used for routes
+
 const catchAsync = require('./utils/CatchAsync.js');
 const ExpressError = require('./utils/ExpressError');
 const { campgroundSchema, reviewSchema } = require('./schemas.js');

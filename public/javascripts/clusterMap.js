@@ -1,3 +1,5 @@
+//purpose: javascript file for creating mapbox cluster map.
+
 mapboxgl.accessToken = mapboxToken;
 const map = new mapboxgl.Map({
     container: 'cluster-map',

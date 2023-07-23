@@ -1,3 +1,5 @@
+//purpose: file containing campgrounds routes
+
 const express = require('express')
 const catchAsync = require('../utils/CatchAsync');
 const campgrounds = require('../controllers/campgrounds.js');

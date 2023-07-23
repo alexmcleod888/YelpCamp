@@ -1,3 +1,5 @@
+//purpose: controller file contain functions for campgrounds based functionality
+
 const Campground = require('../models/campground.js');
 const { cloudinary } = require('../cloudinary');
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');

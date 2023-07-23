@@ -1,3 +1,5 @@
+//purpose: file that randomly seeds default campground locations
+
 //require the necessary modules
 const mongoose = require('mongoose');
 const Campground = require('../models/campground');

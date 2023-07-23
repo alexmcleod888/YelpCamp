@@ -1,3 +1,5 @@
+//schemas for joi based validation of inputs
+
 const BaseJoi = require('joi');
 const sanitizeHtml = require('sanitize-html');
 

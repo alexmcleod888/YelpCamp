@@ -1,8 +1,4 @@
-//HOW TO RUN:
-//Ensure that you run mongod command in terminal to start the database
-//then run nodemon app.js to start the application
-//purpose: starting page where the express routes are defined
-//dependencies: using bootrap version 5.0.0
+//purpose: where the application starts and settings are configured
 
 //require the necessary modules
 if(process.env.NODE_ENV !== "production") {

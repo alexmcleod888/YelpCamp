@@ -1,3 +1,5 @@
+//purpose: creates the basic User Model for use within the application
+
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 

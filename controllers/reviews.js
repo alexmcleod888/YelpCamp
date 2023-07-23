@@ -1,3 +1,5 @@
+//purpose: controller file containing functions for review based functionality
+
 const Review = require('../models/review.js');
 const Campground = require('../models/campground.js');
 

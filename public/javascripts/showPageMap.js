@@ -1,3 +1,5 @@
+//purpose javascript file for creating mapbox map found on the show page
+
 mapboxgl.accessToken = mapboxToken;
 
 const map = new mapboxgl.Map({
